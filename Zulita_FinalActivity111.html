@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Final Activity 1</title>
+</head>
+<body>
+
+<form>
+	<table>
+		<th>Student's Classification</th>
+		<tr><td>ID #:  </td><td id = "DI"></td></tr>
+		<tr><td>Student's First Name: </td><td id="name"></td></tr>
+		<tr><td>Student's Last Name: </td><td id="lname" ></td></tr>
+		<tr><td>Student's Grade: </td> <td id= "gradeStud"></td></tr>
+		<tr><td>Grade's Classification: </td ><td id="everything" style = "color: blue;" ></td><td id="every1" style = " color: red;"></td></tr>
+	</table>
+</form>
+<script type="text/javascript">
+
+
+	var idid = Number(prompt("ID #: "));
+	var fname = prompt("Firt Name:");
+	var lname= prompt("Last Name: ");
+	var stud = prompt("Student's Grade: ");
+
+	
+	if (stud%2 == 0)
+	{document.getElementById("everything").innerHTML ="PASSED";}
+	else
+		{document.getElementById("every1").innerHTML ="FAILED";}
+
+	document.getElementById("DI").innerHTML = idid;
+	document.getElementById("name").innerHTML = fname;
+	document.getElementById("lname").innerHTML = lname;
+	document.getElementById("gradeStud").innerHTML = stud;
+
+</script>
+
+</body>
+</html>
